@@ -6,8 +6,11 @@ console.log(nombre);
 // 2. Declara dos variables edad y ciudad y muéstralas juntas en un solo console.log.
 
 let edad = 18;
-let ciudad = "Juigalpa"
-console.log('Edad: $(edad, Ciudad:  $(ciudad)');
+let ciudad = "Juigalpa";
+console.log(`Edad: ${edad}, Ciudad: ${ciudad}`);
+
+
+
 
 // 3. Declara una constante PI con el valor 3.1416 y muéstrala en consola.
 
