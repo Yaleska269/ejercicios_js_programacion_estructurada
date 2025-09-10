@@ -1,7 +1,5 @@
 
-
 // Métodos de los arreglos
-
 
 // 1. push(): Añade uno o más elementos al final del arreglo y devuelve la nueva longitud del arreglo.
 
@@ -59,8 +57,8 @@ nums.length = 5; // Extiende a [1, undefined, undefined, undefined, undefined]
 //personalizar el orden.
 
 let numeros2 =  [3, 1, 4, 2];
-numeros.sort((a, b) => a - b); // Orden ascendente
-console.log(numeros); // [1, 2, 3, 4]
+numeros2.sort((a, b) => a - b); // Orden ascendente
+console.log(numeros2); // [1, 2, 3, 4]
 
 // 8. join(separador): Convierte todos los elementos del arreglo en una cadena,
 //usando el separador especificado (por defecto, una coma).
@@ -81,28 +79,36 @@ console.log(combinado); // [1, 2, 3, 4, 5]
 // elemento del arreglo, sin devolver un nuevo arreglo.javascript
 
 let colores1 = ['rojo', 'verde', 'azul'];
-colores.forEach(color => console.log(color));
+colores1.forEach(color => console.log(color));
 // Imprime: rojo, verde, azul
+
+for(let color of colores1) {
+    console.log(color);
+}
+
+for (let i = 0; i < colores1.length; i++) {
+    console.log(colores1[i]);
+}   
 
 // 11.map(callback(elemento, indice, arreglo)): Crea un nuevo arreglo aplicando
 //una función a cada elemento del arreglo original.
 
 let numeros3 = [1, 2, 3];
-let dobles = numeros.map(x => x * 2);
+let dobles = numeros3.map(x => x * 2);
 console.log(dobles); // [2, 4, 6]
 
 // 12.filter(callback(elemento, indice, arreglo)): Crea un nuevo arreglo con los
 // elementos que pasan una condición definida por la función callback.
 
 let numeros4 = [1, 2, 3, 4 ];
-let pares = numeros.filter(x => x % 2 === 0);
+let pares = numeros4.filter(x => x % 2 === 0);
 console.log(pares); // [2, 4]
 
 // 13.reduce(callback(acumulador, elemento, indice, arreglo), [valorInicial]):
 // Reduce el arreglo a un solo valor aplicando una función acumuladora.
 
 let numeros5 = [1, 2, 3, 4];
-let suma = numeros.reduce((acc, curr) => acc + curr, 0);
+let suma = numeros5.reduce((acc, curr) => acc + curr, 0);
 console.log(suma); // 10
 
 
@@ -110,45 +116,45 @@ console.log(suma); // 10
 //elemento cumple la condición especificada.
 
 let numeros6 = [1, 2, 3, 4];
-let hayPares1 = numeros.some(x => x % 2 === 0);
+let hayPares1 = numeros6.some(x => x % 2 === 0);
 
 //14.some(callback(elemento, indice, arreglo)): Devuelve true si al menos un
 // elemento cumple la condición especificada.
 
 let numeros7 = [1, 2, 3, 4];
-let hayPares2 = numeros.some(x => x % 2 === 0);
+let hayPares2 = numeros7.some(x => x % 2 === 0);
 
 // 15.every(callback(elemento, indice, arreglo)): Devuelve true si todos los
 // elementos cumplen la condición especificada.
 
 let numeros8 = [2, 4, 6, 8];
-let todosPares = numeros.every(x => x % 2 === 0);
+let todosPares = numeros8.every(x => x % 2 === 0);
 console.log(todosPares); // true
 
 // 16.find(callback(elemento, indice, arreglo)): Devuelve el primer elemento que
 // cumple la condición especificada, o undefined si no lo encuentra.
 let numeros9 = [1, 2, 3, 4];
-let encontrado = numeros.find(x => x > 2);
+let encontrado = numeros9.find(x => x > 2);
 console.log(encontrado); // 3
 
 //17.findIndex(callback(elemento, indice, arreglo)): Devuelve el índice del
 //primer elemento que cumple la condición, o -1 si no lo encuentra.
 let numeros10 = [1, 2, 3, 4];
-let indice1 = numeros.findIndex(x => x > 2);
+let indice1 = numeros10.findIndex(x => x > 2);
 console.log(indice); // 2
 
 //18.entries(): Devuelve un iterador de los índices y valores del arreglo.
 let colores2 = ['rojo', 'verde', 'azul'];
-let iterador1 = colores.entries();
+let iterador1 = colores2.entries();
 console.log([...iterador]);
 // [[0, 'rojo'], [1, 'verde'], [2, 'azul']]
 
 // 19.keys(): Devuelve un iterador de los índices del arreglo.
 let colores3 = ['rojo', 'verde', 'azul'];
-let iterador2 = colores.keys();
+let iterador2 = colores3.keys();
 console.log([...iterador]); // [0, 1, 2]
 
 // 20.values(): Devuelve un iterador de los valores del arreglo.
 let colores4 = ['rojo', 'verde', 'azul'];
-let iterador = colores.values();
+let iterador = colores4.values();
 console.log([...iterador]); // ['rojo', 'verde', 'azul']
