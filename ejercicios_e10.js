@@ -48,6 +48,7 @@ partidos.forEach((partido) => {
     const p = partidos.shift();
     console.log(`Resultado del partido ${p.juego}: Los Toros ${p.Lostoros} - San Fernando ${p.SanFernando}`);
 }
+)
 
 // Eliminacion del primer partido
 
