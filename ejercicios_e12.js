@@ -16,12 +16,12 @@ const mascotas =[
     {nombre:"Thor", edad:6,tipo:"Conejo", peso:18.3},
 ];
 
-// Ordenar las mascotas por tipo de forma alfabética usando sort.
+// Ordenar las mascotas por tipo de forma alfabética usando sort...................................
 
 mascotas.sort((a, b) => a.tipo.localeCompare(b.tipo));
 console.log(mascotas);  
 
-// Ordenar las mascotas por de forma ascendente usando ascendente usando sort
+// Ordenar las mascotas por de forma ascendente usando ascendente usando sort..............................
 
 mascotas.sort((a, b) => a.edad - b.edad);
 console.log(mascotas);
